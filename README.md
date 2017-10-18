@@ -1,4 +1,1 @@
 # Galvanize Secrets
-
-## User Stories
-[ ] 
