@@ -18,6 +18,12 @@ app.get('/', (req,res) => {
   })
 })
 
+app.get('/create', (req,res) => {
+  res.render('create', {
+    title: 'Galvanize Secrets'
+  })
+})
+
 app.listen(port, () => {
   console.log('listening on port', port);
 })

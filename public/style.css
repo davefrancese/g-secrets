@@ -13,3 +13,26 @@ nav {
   margin-top: 200px;
   text-align: center;
 }
+
+/*------ CREATE ACCOUNT PAGE ----------*/
+
+.create-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.create-account{
+  margin: 20px;
+}
+
+.padding {
+  padding: 5px;
+}
+
+.login button, .create-account button {
+  margin-top: 10px;
+}
+
+.login {
+  margin: 20px;
+}
