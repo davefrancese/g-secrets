@@ -7,11 +7,10 @@ const path = require('path')
 
 require('dotenv').config()
 
-app.set('view engine', 'hbs');
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'hbs');
 
 app.get('/', (req,res) => {
   res.render('index', {
@@ -22,3 +21,5 @@ app.get('/', (req,res) => {
 app.listen(port, () => {
   console.log('listening on port', port);
 })
+
+module.exports = app;
